@@ -102,7 +102,7 @@ docker run -d --name speech -p 1701:1701 --restart=always speech:synthesis
 http://{{ip}}:1701/docs
 ```
 
-
+![](https://raw.githubusercontent.com/sanmaomashi/speech_synthesis/main/img/2.png)
 
 ## License
 
