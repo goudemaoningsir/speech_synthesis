@@ -1,0 +1,9 @@
+modelscope==1.5.2
+torch==2.0.1
+fastapi==0.95.1
+uvicorn==0.22.0
+python-multipart==0.0.6
+
+#paddlepaddle==2.4.2
+#paddlespeech==1.4.1
+#loguru==0.7.0
