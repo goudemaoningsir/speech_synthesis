@@ -13,7 +13,7 @@ from synthesis.api_damo_emo import damo_emo_router
 ROOT_PATH = Path(__file__).parent
 
 app = FastAPI(
-    title="分词服务",
+    title="语音合成",
     default_language="zh",
     debug=True
 )
