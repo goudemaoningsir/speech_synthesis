@@ -3,16 +3,26 @@
 # @Time : 2023/5/26 20:35 
 # @Author : sanmaomashi
 # @GitHub : https://github.com/sanmaomashi
+#
+from paddlespeech.cli.tts.infer import TTSExecutor
+tts = TTSExecutor()
+tts(text="今天天气十分不错。", output="output.wav")
 
-from scipy.io.wavfile import write
 
-from modelscope.outputs import OutputKeys
-from modelscope.pipelines import pipeline
-from modelscope.utils.constant import Tasks
+from paddlespeech.cli.tts.infer import TTSExecutor
 
-text = '待合成文本'
-model_id = 'speech_tts/speech_sambert-hifigan_tts_ainan_zh-cn_16k'
-sambert_hifigan_tts = pipeline(task=Tasks.text_to_speech, model=model_id, model_revision='v1.0.0')
-output = sambert_hifigan_tts(input=text)
-pcm = output[OutputKeys.OUTPUT_PCM]
-write('output.wav', 16000, pcm)
+tts = TTSExecutor()
+tts.am = 'fastspeech2_csmsc'
+tts.am_config = 'path/to/acoustic_model_config.yml'
+tts.am_ckpt = 'path/to/acoustic_model_checkpoint.pdparams'
+tts.am_stat = 'path/to/acoustic_model_stats.txt'
+tts.phones_dict = 'path/to/phones_dict.txt'
+tts.voc = 'hifigan_csmsc'
+tts.voc_config = 'path/to/vocoder_config.yml'
+tts.voc_ckpt = 'path/to/vocoder_checkpoint.pdparams'
+tts.voc_stat = 'path/to/vocoder_stats.txt'
+tts.lang = 'en'
+tts.device = 'gpu'
+tts.fs = 22050
+
+tts(text="今天天气十分不错。", output="output.wav")

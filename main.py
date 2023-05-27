@@ -9,6 +9,7 @@ from pathlib import Path
 from fastapi import FastAPI
 from synthesis.api_damo import damo_router
 from synthesis.api_damo_emo import damo_emo_router
+from synthesis.api_paddlespeech import paddlespeech_router
 
 ROOT_PATH = Path(__file__).parent
 
@@ -20,6 +21,7 @@ app = FastAPI(
 
 app.include_router(damo_router, prefix="/synthesis", tags=["modelscope"])
 app.include_router(damo_emo_router, prefix="/synthesis", tags=["modelscope"])
+app.include_router(paddlespeech_router, prefix="/synthesis", tags=["paddlespeech"])
 
 
 if __name__ == "__main__":

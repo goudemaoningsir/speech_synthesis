@@ -30,7 +30,7 @@
 - [x] [damo/speech_sambert-hifigan_tts_zhiyue_zh-cn_16k](https://www.modelscope.cn/models/damo/speech_sambert-hifigan_tts_zhiyue_zh-cn_16k/summary)
 - [x] [damo/speech_sambert-hifigan_tts_zhiyan_emo_zh-cn_16k](https://www.modelscope.cn/models/damo/speech_sambert-hifigan_tts_zhiyan_emo_zh-cn_16k/summary)
 - [x] [damo/speech_sambert-hifigan_tts_zhibei_emo_zh-cn_16k](https://www.modelscope.cn/models/damo/speech_sambert-hifigan_tts_zhibei_emo_zh-cn_16k/summary)
-- [ ] [PaddleSpeech](https://github.com/PaddlePaddle/PaddleSpeech)
+- [x] [PaddleSpeech](https://github.com/PaddlePaddle/PaddleSpeech)
 
 
 
@@ -82,6 +82,8 @@ http://{{ip}}:1701/docs
 
 ![](https://raw.githubusercontent.com/sanmaomashi/speech_synthesis/main/img/2.png)
 
+
+
 ## docker部署
 
 构建镜像
@@ -102,7 +104,17 @@ docker run -d --name speech -p 1701:1701 --restart=always speech:synthesis
 http://{{ip}}:1701/docs
 ```
 
-![](https://raw.githubusercontent.com/sanmaomashi/speech_synthesis/main/img/2.png)
+![](https://raw.githubusercontent.com/sanmaomashi/speech_synthesis/main/img/3.png)
+
+
+
+## Awesome
+
+- [VTuberTalk](https://github.com/jerryuhoo/VTuberTalk)
+
+  
+
+
 
 ## License
 

@@ -1,4 +1,4 @@
-FROM sanmaomashi/python:3.9.16-ubuntu20.04
+FROM registry.cn-hangzhou.aliyuncs.com/modelscope-repo/modelscope:ubuntu20.04-py37-torch1.11.0-tf1.15.5-1.6.0
 
 COPY . /app
 
