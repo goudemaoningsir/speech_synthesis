@@ -31,6 +31,7 @@
 - [x] [damo/speech_sambert-hifigan_tts_zhiyan_emo_zh-cn_16k](https://www.modelscope.cn/models/damo/speech_sambert-hifigan_tts_zhiyan_emo_zh-cn_16k/summary)
 - [x] [damo/speech_sambert-hifigan_tts_zhibei_emo_zh-cn_16k](https://www.modelscope.cn/models/damo/speech_sambert-hifigan_tts_zhibei_emo_zh-cn_16k/summary)
 - [x] [PaddleSpeech](https://github.com/PaddlePaddle/PaddleSpeech)
+- [x] [edge-tts](https://github.com/rany2/edge-tts)(推荐)
 
 
 
@@ -47,7 +48,9 @@
 
 
 
-## 环境依赖
+## 环境
+
+Ubuntu20.04
 
 python3.7
 
@@ -111,6 +114,10 @@ http://{{ip}}:1701/docs
 ## Awesome
 
 - [VTuberTalk](https://github.com/jerryuhoo/VTuberTalk)
+
+- [edge-tts](https://github.com/rany2/edge-tts)
+
+- [coqui-ai/TTS](https://github.com/coqui-ai/TTS)
 
   
 
